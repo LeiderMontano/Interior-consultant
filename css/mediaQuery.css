@@ -1,0 +1,152 @@
+@media screen and (max-width: 1360px) {
+    .container-nav-menu{
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        width: 100%;
+        margin-left: -100%;
+        transition: all 0.2s linear;
+        z-index: 100;
+        background-color: rgba(0, 0, 0, 0.7);
+    }
+
+    .container-nav-menu.show{
+        margin-left: 0;
+    }
+
+    .container-nav-ul{
+        background-color: var(--color-background);
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        align-items: center;
+        justify-content: flex-start;
+        padding: 300px;
+    }
+
+    .nav-item{
+        margin-top: 2rem;
+        color: #444444;
+        text-decoration: none;
+        font-weight: bold;
+        position: relative;
+        padding-left: 0;
+    }
+
+    .btn-menu{
+        z-index: 200;
+        width: 40px;
+        height: 40px;
+        border: none;
+        display: flex;
+        background: none;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+    }
+
+    .btn-menu span{
+        width: 37px;
+        height: 4px;
+        margin-bottom: 5px;
+        position: relative;
+        background: var(--color-font001);
+        border-radius: 3px;
+        transform-origin: 4px 0px;
+        transition: all 0.2s linear;
+    }
+
+    .btn-menu.close span{
+        opacity: 1;
+        transform: rotate(45deg) translate(0px, 0px);
+        background: var(--color-font001);
+    }
+
+    .btn-menu.close span:nth-child(2){
+        transform: rotate(-45deg) translate(-8px, 5px);
+    }
+
+    .btn-menu.close span:nth-child(3){
+        display: none;
+    }
+
+    .container-text-img{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .container-photo-text{
+        left: calc(10rem);
+    }
+
+    .img-illus{
+        width: 720px;
+        height: 486px;
+    }
+
+    .text-read{
+        padding: 2rem 0 2rem 0;
+    }
+}
+
+@media screen and (max-width: 414px){
+    body{
+        padding: 1rem;
+        margin: 1rem;
+    }
+
+    .text-title{
+        font-size: 36px;
+    }
+
+    .text-read{
+        font-size: 14px;
+    }
+
+    .text-more{
+        font-size: 14px;
+    }
+
+    .img-illus{
+        width: 391px;
+        height: 279px;
+        padding-right: 1rem;
+    }
+
+    .container-nav-ul{
+        padding: 220px;
+    }
+
+    .container-photo-text{
+        width: 250px;
+        height: 88px;
+        position: none;
+        left: calc(1rem);
+        bottom: calc(10rem);
+    }
+
+    .photo{
+        width: 62px;
+    }
+    
+    .photo-name{
+        font-size: 12px;
+        padding-top: 0.5rem;
+    }
+
+    .photo-work{
+        font-size: 10px;
+        padding-top: 0.5rem;
+    }
+
+    .photo-text{
+        font-size: 18px;
+        padding: 0.5rem;
+    }
+
+    .credits{
+        font-size: 12px;
+    }
+}
